@@ -1,2 +1,2 @@
-# openwhats.github.io
-Web Service
+# OpenWhats
+Easy Whatsapp Openner

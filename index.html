@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<meta name="viewport" content= "width=device-width, user-scalable=no">
+<head>
+  <meta charset="UTF-8">
+  <title>OpenWhats</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>    
+<div id="wrapper"> 
+<div>
+  <h1 class="header" >OpenWhats</h1>
+<select class="box" style ="display: none;" name="drop_down" id="cont" onchange="change(this)">
+    <option value="None" selected="Selected">Select type</option>
+</select>
+<input class="inpc" id="num1" type="text" />
+<input class="inp" onKeyDown="if(event.keyCode == 13){chat()}" id="num" type="text" />
+    <div class="key" rel="1">1</div>
+    <div class="key" rel="2">2<span>abc</span></div>
+    <div class="key" rel="3">3<span>def</span></div>
+    <div class="clear"></div>
+    <div class="key" rel="4">4<span>ghi</span></div>
+    <div class="key" rel="5">5<span>jkl</span></div>
+    <div class="key" rel="6">6<span>mno</span></div>
+    <div class="clear"></div>
+    <div class="key" rel="7">7<span>pqrs</span></div>
+    <div class="key" rel="8">8<span>tuv</span></div>
+    <div class="key" rel="9">9<span>wxyz</span></div>
+    <div class="clear"></div>
+    <div class="key special" rel="+">+</div>
+    <div class="key" rel="0">0<span></span></div>
+    <div class="del">X</div>
+    <div class="clear"></div>
+    <div class="key nb" rel=''></div>
+    <div class="chat" onclick="chat()"><img src="wa.png" width="40px" height="40px"/></div>
+    <div class="key nb" rel=''></div>
+    <div class="clear"></div>
+</div>
+  <script  src="./script.js"></script>
+</body>
+</html>
