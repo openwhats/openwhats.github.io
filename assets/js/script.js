@@ -12,6 +12,7 @@ $('.key').click(function(){
   var currentValue = $('.inp').val();
   var valueToAppend = $(this).attr('rel');
   $('.inp').val(currentValue + valueToAppend);
+  verf();
 });
 
 
@@ -19,6 +20,7 @@ $('.del').click(function(){
     var currentValue = $('.inp').val();
     var newValue = currentValue.substring(0, currentValue.length - 1);
     $('.inp').val(newValue);
+    verf();
 });
  
 function chat(){
@@ -60,3 +62,19 @@ function ipLookUp() {
   })
 }
 ipLookUp()
+
+
+function verf(){
+  var a = document.getElementById("num");
+  if (a.value!=''){
+    document.getElementById("del").removeAttribute("hidden");
+  }
+  else{
+    document.getElementById("del").setAttribute("hidden","hidden");
+  }
+}
+
+function blockSpecialChar(e) {            
+  var k = e.charCode? e.charCode : e.keyCode;
+  return ( k==13 || (k >= 48 && k <= 57) );
+}
