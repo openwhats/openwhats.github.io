@@ -33,7 +33,7 @@
 </head>
 <body>
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>    
+<script src="./assets/js/jquery-1.11.0.min.js"></script>    
 <div id="wrapper"> 
 <div>
   <img src="./assets/images/header.png" height="50px" width="50px" style="margin-top: 22px;margin-bottom: 22px;">
@@ -41,8 +41,8 @@
 <select class="box" style ="display: none;" name="drop_down" id="cont" onchange="change(this)">
     <option value="None" selected="Selected">Select type</option>
 </select>
-<input class="inpc" id="num1" type="text" />
-<input class="inp" onKeyDown="if(event.keyCode == 13){chat()}" id="num" type="text" />
+<input class="inpc" id="num1" type="text" onkeypress="return blockSpecialChar(event)"/>
+<input class="inp" onKeyDown="if(event.keyCode == 13){chat()}" onkeypress="return blockSpecialChar(event)" id="num" type="text" />
     <div class="key" rel="1">1</div>
     <div class="key" rel="2">2<span>abc</span></div>
     <div class="key" rel="3">3<span>def</span></div>
@@ -61,7 +61,7 @@
     <div class="clear"></div>
     <div class="key nb" rel=''></div>
     <div class="chat" onclick="chat()"><img src="./assets/images/wa.png" width="40px" height="40px"/></div>
-    <div class="del"></div>
+    <div class="del" id="del" hidden="hidden"></div>
     <div class="clear"></div>
 </div>
 </div>

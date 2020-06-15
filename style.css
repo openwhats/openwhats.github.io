@@ -57,7 +57,15 @@ body {
   margin:0 7px 10px 7px;
   background-color: rgb(235, 233, 233);
   cursor:pointer;
+  transition: background-color 0.3s;
 }
+
+.key:hover{
+  background-color: rgb(185, 182, 182);
+  transition: background-color 0.3s;
+}
+
+
 .key span {
   display:block;
   color:#444;
@@ -106,6 +114,12 @@ body {
   line-height:60px;
   font-size:40px;
 }
+
+.chat:hover{
+  background:#49b15c;
+  transition: background 0.3s;
+}
+
 .clear {
   clear:both;
 }
