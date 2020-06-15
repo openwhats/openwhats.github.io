@@ -46,7 +46,7 @@ body {
 
 .key {
   border-radius: 50px 50px 50px 50px;
-  color:#444;
+  color:black;
   width:70px;
   height:70px;
   text-align:center;
@@ -55,7 +55,7 @@ body {
   box-sizing:border-box;
   padding:5px 0 0 0;
   margin:0 7px 10px 7px;
-  border:1px solid #444;
+  background-color: rgb(235, 233, 233);
   cursor:pointer;
 }
 .key span {
@@ -67,7 +67,6 @@ body {
 }
 .del {
   border-radius: 50px 50px 50px 50px;
-  color:#444;
   width:70px;
   height:70px;
   text-align:center;
@@ -79,6 +78,10 @@ body {
   border:1px solid #444;
   cursor:pointer;
   line-height:60px;
+  border:none;
+  background: url("./blight.png");
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
 }
 .key.nb {
   border:none;
@@ -108,8 +111,8 @@ body {
 
 .header{
   color:#444;
-  position: relative;
-  text-align: center;
+  width: 180px;
+  float: right;
 }
 
 .error{
@@ -147,7 +150,9 @@ body{
 .del {
   color:white;
   border:none;
-  background-color: rgb(36, 36, 36);
+  background: url("./bdark.png");
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
 }
 .key.nb{
   background-color: black;
