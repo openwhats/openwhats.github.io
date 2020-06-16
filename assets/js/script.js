@@ -113,7 +113,7 @@ if(cc){
 
 
 function ctc(){
-  document.cookie = "tcshown=yes";
+  document.cookie = "tcshown=yes ; expires=Thu, 17 Dec 2020 12:00:00 UTC";
   var div2 = document.getElementById("box");
   div2.parentNode.removeChild(div2);
   var div3 = document.getElementById("wrpp");
