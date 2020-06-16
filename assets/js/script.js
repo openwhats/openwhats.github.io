@@ -108,7 +108,7 @@ if(c!=null){
 
 if(cc){
   var tc = document.getElementById("tcpopup");
-  tc.innerHTML = '<style id="wrpp">#wrapper{ -webkit-filter : blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px);filter: blur(2px); }</style><div id="box" class="du-dialog dlg--open"><div class="dlg-wrapper" tabindex="0"><div class="dlg-header">Privacy</div><div class="dlg-content">At OpenWhats, one of our main priorities is the privacy of our visitors. We do not collect any information of our visitors and numbers entered in OpenWhats.</div><div class="dlg-actions"><button id="okay" onclick="ctc()" class="dlg-action ok-action" tabindex="1">Agree</button></div></div></div>';
+  tc.innerHTML = '<style id="wrpp">#wrapper{ -webkit-filter : blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px);filter: blur(2px); }</style><div id="box" class="du-dialog dlg--open"><div class="dlg-wrapper" tabindex="0"><div class="dlg-header">Privacy</div><div class="dlg-content">At OpenWhats, one of our main priorities is the privacy of our users. We do not collect any information of the users. Numbers entered will be erased when you close this site.</div><div class="dlg-actions"><button id="okay" onclick="ctc()" class="dlg-action ok-action" tabindex="1">Agree</button></div></div></div>';
 }
 
 
